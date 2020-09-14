@@ -1,0 +1,118 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 06 2020
+Boostrap 3 Tutorial : Objects
+https://www.w3schools.com/bootsrap/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Bootstrap Grid - Stacked-to-horizontal</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Bootstrap Grid - Stacked-to-horizontal</h1>
+
+<!-- Bootstrap Grid Example: Stacked-to-horizontal
+===================================================
+We will create a basic grid system that starts out stacked on extra small
+devices, before becoming horizontal on larger devices.
+
+The following example shows a simple "stacked-to-horizontal" two-column layout,
+meaning it will result in a 50%- 50% split on all screens, except for extra
+small screens, which it will automatically stack (100%):
+ _________________________________________________________________________
+|         col-sm-6                |                col-sm-6              |
+|_________________________________|______________________________________| -->
+      <div class="container">
+      <h3>Hello World!</h3>
+      <div class="row">
+        <div class="col-sm-6" style="background-color:yellow;">
+          <p>Lorem ipsum  Nunc tincidunt ultricies consectetur.
+            Integer ac commodo lorem.
+            Maecenas ornare fermentum erat vel commodo. Nullam eget metus
+            sed turpis vestibulum laoreet. Nam non tristique ipsum.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Quisque scelerisque fringilla nunc at tincidunt. Donec venenatis
+            nulla ac egestas aliquet. Quisque blandit, nulla eu dapibus
+            sodales, ante dui fermentum dui, a malesuada lorem ex nec lorem.
+            Suspendisse rhoncus libero id condimentum euismod. Sed enim dolor,
+            tincidunt at volutpat et, pharetra ut leo. Maecenas mauris erat,
+            mattis sed interdum ac, aliquam a nunc. Integer diam nulla,
+            scelerisque a auctor id, ultricies eu dolor. Donec et magna cursus,
+            sollicitudin quam ac, fringilla neque. </p>
+        </div>
+        <div class="col-sm-6" style="background-color:pink;">
+          <p>Lorem ipsum  Nunc tincidunt ultricies consectetur.
+            Integer ac commodo lorem.
+            Maecenas ornare fermentum erat vel commodo. Nullam eget metus
+            sed turpis vestibulum laoreet. Nam non tristique ipsum.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Quisque scelerisque fringilla nunc at tincidunt. Donec venenatis
+            nulla ac egestas aliquet. Quisque blandit, nulla eu dapibus
+            sodales, ante dui fermentum dui, a malesuada lorem ex nec lorem.
+            Suspendisse rhoncus libero id condimentum euismod. Sed enim dolor,
+            tincidunt at volutpat et, pharetra ut leo. Maecenas mauris erat,
+            mattis sed interdum ac, aliquam a nunc. Integer diam nulla,
+            scelerisque a auctor id, ultricies eu dolor. Donec et magna cursus,
+            sollicitudin quam ac, fringilla neque. </p>
+        </div>
+      </div>
+    </div>
+
+<!--Tip: The numbers in the '.col-sm-*' classes indicates how many columns
+  ------ the div should span (out of 12). So, '.col-sm-1' spans 1 column,
+         .col-sm-4 spans 4 columns, .col-sm-6 spans 6 columns, etc.
+
+Note: Make sure that the sum always adds up to 12!
+----
+Tip: You can turn any 'fixed-width' layout into a 'full-width' layout by
+     changing the '.container' class to '.container-fluid'                   -->
+
+
+    <div class="container-fluid">
+      <h3>Hello World!</h3>
+      <div class="row">
+        <div class="col-sm-6" style="background-color:yellow;">
+          <p>Lorem ipsum  Nunc tincidunt ultricies consectetur.
+            Integer ac commodo lorem.
+            Maecenas ornare fermentum erat vel commodo. Nullam eget metus
+            sed turpis vestibulum laoreet. Nam non tristique ipsum.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Quisque scelerisque fringilla nunc at tincidunt. Donec venenatis
+            nulla ac egestas aliquet. Quisque blandit, nulla eu dapibus
+            sodales, ante dui fermentum dui, a malesuada lorem ex nec lorem.
+            Suspendisse rhoncus libero id condimentum euismod. Sed enim dolor,
+            tincidunt at volutpat et, pharetra ut leo. Maecenas mauris erat,
+            mattis sed interdum ac, aliquam a nunc. Integer diam nulla,
+            scelerisque a auctor id, ultricies eu dolor. Donec et magna cursus,
+            sollicitudin quam ac, fringilla neque. </p>
+        </div>
+        <div class="col-sm-6" style="background-color:pink;">
+          <p>Lorem ipsum  Nunc tincidunt ultricies consectetur.
+            Integer ac commodo lorem.
+            Maecenas ornare fermentum erat vel commodo. Nullam eget metus
+            sed turpis vestibulum laoreet. Nam non tristique ipsum.
+            Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            Quisque scelerisque fringilla nunc at tincidunt. Donec venenatis
+            nulla ac egestas aliquet. Quisque blandit, nulla eu dapibus
+            sodales, ante dui fermentum dui, a malesuada lorem ex nec lorem.
+            Suspendisse rhoncus libero id condimentum euismod. Sed enim dolor,
+            tincidunt at volutpat et, pharetra ut leo. Maecenas mauris erat,
+            mattis sed interdum ac, aliquam a nunc. Integer diam nulla,
+            scelerisque a auctor id, ultricies eu dolor. Donec et magna cursus,
+            sollicitudin quam ac, fringilla neque. </p>
+        </div>
+      </div>
+    </div>
+
+
+
+  </body>
+
+</html>

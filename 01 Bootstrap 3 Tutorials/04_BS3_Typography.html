@@ -1,0 +1,500 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+03 06 2020
+Boostrap 3 Tutorial : Objects
+https://www.w3schools.com/bootsrap/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap Text-Typography</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Boostrap Text-Typography.</h1><hr/>
+
+<!-- Bootstrap's Default Settings
+==================================
+
+> Bootstrap's global default 'font-size' is 14px, with a line-height of 1.428.
+
+> This is applied to the <body> element and all paragraphs (<p>).
+
+> In addition, all <p> elements have a bottom margin that equals half of their
+computed line-height (10px by default).
+
+
+Bootstrap vs. Browser Defaults
+===============================
+
+In this chapter, we will look at some HTML elements that will be styled a
+little bit differently by Bootstrap than browser defaults.
+
+
+<h1> - <h6>
+============
+
+By default, Bootstrap will style the HTML headings (<h1> to <h6>) in
+the following way:                                                           -->
+
+    <div class="container">
+      <h1>Boostrap Heading h1 (36px)</h1>
+      <h2>Boostrap Heading h2 (30px)</h2>
+      <h3>Boostrap Heading h3 (24px)</h3>
+      <h4>Boostrap Heading h4 (18px)</h4>
+      <h5>Boostrap Heading h5 (14px)</h5>
+      <h6>Boostrap Heading h6 (12px)</h6
+    </div><hr/>
+
+
+<!-- <small>
+=============
+
+In Bootstrap the HTML <small> element is used to create a lighter, secondary
+text in any heading:                                                         -->
+
+    <div class="container">
+      <h1>Boostrap Heading <small>secondary text</small> </h1>
+      <h2>Boostrap Heading <small>secondary text</small></h2>
+      <h3>Boostrap Heading <small>secondary text</small></h3>
+      <h4>Boostrap Heading <small>secondary text</small></h4>
+      <h5>Boostrap Heading <small>secondary text</small></h5>
+      <h6>Boostrap Heading <small>secondary text</small></h6>
+    </div><hr/>
+
+
+<!-- <mark>
+============
+
+Bootstrap will style the HTML '<mark>' element in the following way:         -->
+
+    <div class="container">
+      <p>Use the HTML &lt;mark&gt; element to <mark>highlight</mark> text</p>
+    </div><hr/>
+
+
+<!-- <abbr>
+============
+
+Bootstrap will style the HTML <abbr> element in the following way: -->
+
+    <div class="container">
+      <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    </div><hr/>
+
+
+<!-- <blockquote>
+=================
+
+Bootstrap will style the HTML <blockquote> element in the following way: -->
+
+    <div class="container">
+      <p>The blockquote element is used to present content from another source:</p>
+      <blockquote>
+           <p>For 50 years, WWF has been protecting the future of nature.
+              The world's leading conservation organization, WWF works in
+              100 countries and is supported by 1.2 million members in the
+              United States and close to 5 million globally.</p>
+          <footer>From WWF's Website</footer>
+      </blockquote>
+    </div>
+
+<!-- To show the quote on the right, use the '.blockquote-reverse' class: -->
+
+    <div class="container">
+      <p>The blockquote element is used to present content from another source:</p>
+      <blockquote class="blockquote-reverse">
+        <p>For 50 years, WWF has been protecting the future of nature.
+          The world's leading conservation organization, WWF works in
+          100 countries and is supported by 1.2 million members in the
+          United States and close to 5 million globally.</p>
+          <footer>From WWF's Website</footer>
+        </blockquote>
+      </div><hr/>
+
+
+<!-- <dl>
+===========
+
+Bootstrap will style the HTML <dl> element in the following way: -->
+
+      <div class="container">
+        <dl>
+          <dt>Coffee</dt>
+          <dd>black hot drink</dd>
+
+          <dt>Milk</dt>
+          <dd>white cold drink</dd>
+        </dl>
+      </div><hr/>
+
+
+<!-- <code>
+============
+
+Bootstrap will style the HTML <code> element in the following way: -->
+
+      <div class="container">
+        <p>Inline snippets of code should be embedded in the code element</p>
+        <p>The following HTML elements: <code>span</code>, <code>section</code>
+         and <code>div</code></p> define a section in a document.
+      </div><hr/>
+
+
+<!-- <kbd>
+==========
+
+Bootstrap will style the HTML <kbd> element in the following way: -->
+
+      <div class="container">
+        <p>Use <kbd>crtl + p</kbd> to open the print dialog box</p>
+      </div><hr/>
+
+
+<!-- <pre>
+==========
+
+Bootstrap will style the HTML <pre> element in the following way: -->
+      <div class="container">
+        <p>For multiple lines of code, use the pre element:</p>
+      <pre>
+        Text in a pre element
+        is displayed in a fixed-width
+        font, and it preserves
+        both      spaces and
+        line breaks.
+      </pre>
+      </div><hr/>
+
+
+<!-- Contextual Colors and Backgrounds
+======================================
+
+Bootstrap also has some contextual classes that can be used to provide
+"meaning through colors".
+
+The classes for text colors are:
+.text-muted
+.text-primary
+.text-success,
+.text-info
+.text-warning
+.text-danger                                                                 -->
+
+    <div class="container">
+      <p class="text-muted">This text is muted.</p>
+      <p class="text-primary">This text is primary.</p>
+      <p class="text-success">This text indicate succes.</p>
+      <p class="text-info">This text represente some information.</p>
+      <p class="text-warning">This text represents a warning. </p>
+      <p class="<text-danger">This text represents danger. </p>
+    </div>
+
+
+<!-- The classes for background colors are:
+.bg-primary
+.bg-success
+.bg-info
+.bg-warning
+.bg-danger: -->
+
+      <div class="container">
+        <p class="bg-primary">This text is important.</p>
+        <p class="bg-success">This text indicates success.</p>
+        <p class="bg-info">This text represents some information.</p>
+        <p class="bg-warning">This text represents a warning.</p>
+        <p class="bg-danger">This text represents danger. </p>
+      </div>
+
+
+<!-- More Typography Classes
+==============================
+The Bootstrap classes below can be added to style HTML elements further:
+
+Class 	            Description
+------              -----------
+.lead 	            Makes a paragraph stand out
+--------------------------------------------------------------------------------
+.small 	            Indicates smaller text (set to 85% of the size of the parent)
+--------------------------------------------------------------------------------
+.text-left 	        Indicates left-aligned text
+--------------------------------------------------------------------------------
+.text-center 	      Indicates center-aligned text
+--------------------------------------------------------------------------------
+.text-right 	      Indicates right-aligned text
+--------------------------------------------------------------------------------
+.text-justify 	    Indicates justified text
+--------------------------------------------------------------------------------
+.text-nowrap 	      Indicates no wrap text
+--------------------------------------------------------------------------------
+.text-lowercase 	  Indicates lowercased text
+--------------------------------------------------------------------------------
+.text-uppercase 	  Indicates uppercased text
+--------------------------------------------------------------------------------
+.text-capitalize 	  Indicates capitalized text
+--------------------------------------------------------------------------------
+.initialism 	      Displays the text inside an <abbr> element in a slightly
+                    smaller font size
+--------------------------------------------------------------------------------
+.list-unstyled 	    Removes the default list-style and left margin on list items
+                    (works on both <ul> and <ol>). This class only applies to
+                    immediate children list items (to remove the default
+                    list-style from any nested lists, apply this class to any
+                    nested lists as well)
+--------------------------------------------------------------------------------
+.list-inline 	      Places all list items on a single line
+--------------------------------------------------------------------------------
+.dl-horizontal 	    Lines up the terms (<dt>) and descriptions (<dd>) in <dl>
+                    elements side-by-side. Starts off like default <dl>s, but
+                    when the browser window expands,it will line up side-by-side
+--------------------------------------------------------------------------------
+.pre-scrollable 	  Makes a <pre> element scrollable
+--------------------------------------------------------------------------------
+
+
+Typography
+============
+
+The elements below are HTML elements that will be styled a little bit
+differently by Bootstrap than browser defaults.
+
+The classes below is used to style the elements further.
+
+Element/Class 	  Description
+-------------     -----------
+--------------------------------------------------------------------------------
+<h1> - <h6>
+or                    h1 - h6 heading
+.h1 - .h6
+--------------------------------------------------------------------------------
+<small>               Creates a lighter, secondary text in any heading
+                      Heading (secondary text)
+--------------------------------------------------------------------------------
+.small 	              Indicates smaller text (set to 85% of the parent's size):
+                      Smaller text
+--------------------------------------------------------------------------------
+.lead 	              Makes a text stand out: Stand out text
+--------------------------------------------------------------------------------
+<mark>
+or                    Highlights text: Highlighted text
+.mark
+--------------------------------------------------------------------------------
+<del> 	              Indicates deleted text: Deleted text
+--------------------------------------------------------------------------------
+<s> 	                Indicates no longer relevant text: No longer relevant text
+--------------------------------------------------------------------------------
+<ins> 	              Indicates inserted text: Inserted text
+--------------------------------------------------------------------------------
+<u> 	                Indicates underlined text: Underlined text
+--------------------------------------------------------------------------------
+<strong> 	            Indicates bold text: Bold text
+--------------------------------------------------------------------------------
+<em> 	                Indicates italic text: Italic text
+--------------------------------------------------------------------------------
+.text-left 	          Indicates left-aligned text
+--------------------------------------------------------------------------------
+.text-center 	        Indicates center-aligned text
+--------------------------------------------------------------------------------
+.text-right 	        Indicates right-aligned text
+--------------------------------------------------------------------------------
+.text-justify 	      Indicates justified text
+--------------------------------------------------------------------------------
+.text-nowrap 	        Indicates no wrap text
+--------------------------------------------------------------------------------
+.text-lowercase 	    Indicates lowercased text: LOWERCASED TEXT
+--------------------------------------------------------------------------------
+.text-uppercase 	    Indicates uppercased text: uppercased text
+--------------------------------------------------------------------------------
+.text-capitalize 	    Indicates capitalized text: capitalized text
+--------------------------------------------------------------------------------
+<abbr> 	              The <abbr> element indicates an abbreviation or acronym.
+                      Abbreviations with a title attribute have a dotted bottom
+                      border and a help cursor on hover, providing additional
+                      context on hover.
+--------------------------------------------------------------------------------
+.initialism 	        Displays the text inside the <abbr> element in a slightly
+                      smaller font size
+--------------------------------------------------------------------------------
+<address> 	          Presents contact information
+--------------------------------------------------------------------------------
+<blockquote>     	    Indicates blocks of content from another source
+--------------------------------------------------------------------------------
+.blockquote-reverse 	Indicates a blockquote with right-aligned content
+--------------------------------------------------------------------------------
+<ul> 	                Indicates an unordered list
+--------------------------------------------------------------------------------
+<ol> 	                Indicates an ordered list
+--------------------------------------------------------------------------------
+.list-unstyled 	      Removes the default list-style and left margin on list
+                      items (works on both <ul> and <ol>). This class only
+                      applies to immediate children list items (to remove the
+                      default list-style from any nested lists, apply this class
+                      to any nested lists as well)
+--------------------------------------------------------------------------------
+.list-inline 	        Places all list items on a single line
+--------------------------------------------------------------------------------
+<dl> 	                Indicates a description list
+--------------------------------------------------------------------------------
+.dl-horizontal 	      Lines up the terms and descriptions in the <dl> element
+                      side-by-side. Starts off like default <dl>s, but when the
+                      browser window expands, it will line up side-by-side
+--------------------------------------------------------------------------------
+
+
+
+Code
+=====
+
+Element/Class     	Description
+---------------     ------------
+--------------------------------------------------------------------------------
+<var> 	                      Indicates variables: x = ab + y
+--------------------------------------------------------------------------------
+<kbd> 	                      Indicates input that is typically entered via the
+                              keyboard: CTRL + P
+--------------------------------------------------------------------------------
+<pre> 	                      Indicates multiple lines of code
+--------------------------------------------------------------------------------
+<pre class="pre-scrollable"> 	Indicates multiple lines of code with scrollbar
+--------------------------------------------------------------------------------
+<samp> 	                      Indicates sample output from a computer program:
+                              Sample output
+--------------------------------------------------------------------------------
+<code> 	                      Indicates inline snippets of code: span, div
+
+
+More Typography Classes
+=========================
+The Bootstrap classes below can be added to style HTML elements further:
+
+Class 	        Description
+--------------------------------------------------------------------------------
+.lead 	          Makes a paragraph stand out
+--------------------------------------------------------------------------------
+.small 	          Indicates smaller text (set to 85% of the size of the parent)
+--------------------------------------------------------------------------------
+.text-left 	      Indicates left-aligned text
+--------------------------------------------------------------------------------
+.text-center 	    Indicates center-aligned text
+--------------------------------------------------------------------------------
+.text-right 	    Indicates right-aligned text
+--------------------------------------------------------------------------------
+.text-justify 	  Indicates justified text
+--------------------------------------------------------------------------------
+.text-nowrap 	    Indicates no wrap text
+--------------------------------------------------------------------------------
+.text-lowercase   Indicates lowercased text
+--------------------------------------------------------------------------------
+.text-uppercase   Indicates uppercased text
+--------------------------------------------------------------------------------
+.text-capitalize 	Indicates capitalized text
+--------------------------------------------------------------------------------
+.initialism 	    Displays the text inside an <abbr> element in a slightly
+                  smaller font size
+--------------------------------------------------------------------------------
+.list-unstyled 	  Removes the default list-style and left margin on list items
+                  (works on both <ul> and <ol>). This class only applies to
+                  immediate children list items (to remove the default
+                  list-style from any nested lists, apply this class to any
+                  nested lists as well)
+--------------------------------------------------------------------------------
+.list-inline 	    Places all list items on a single line
+--------------------------------------------------------------------------------
+.dl-horizontal 	  Lines up the terms (<dt>) and descriptions (<dd>) in <dl>
+                  elements side-by-side. Starts off like default <dl>s, but
+                  when the browser window expands, it will line up side-by-side
+--------------------------------------------------------------------------------
+.pre-scrollable 	Makes a <pre> element scrollable
+--------------------------------------------------------------------------------
+
+
+
+Other
+==========
+
+Class 	      Description
+--------------------------------------------------------------------------------
+.pull-left 	        Floats an element to the left
+--------------------------------------------------------------------------------
+.pull-right 	      Floats an element to the right
+--------------------------------------------------------------------------------
+.center-block       Sets an element to display:block with margin-right:auto and
+                    margin-left:auto
+--------------------------------------------------------------------------------
+.clearfix 	        Clears floats
+--------------------------------------------------------------------------------
+.show 	            Forces an element to be shown (display:block)
+--------------------------------------------------------------------------------
+.hidden 	          Forces an element to be hidden (display:none)
+--------------------------------------------------------------------------------
+.invisible 	        Forces an element to be invisible (visibility:hidden).
+                    Will take up space on page even though it is invisible
+--------------------------------------------------------------------------------
+.sr-only 	          Hides an element to all devices except screen readers
+--------------------------------------------------------------------------------
+.sr-only-focusable 	Combine with .sr-only to show the element again when it is
+                    focused (e.g. by a keyboard-only user)
+--------------------------------------------------------------------------------
+.text-hide 	        Helps replace an element's text content with a background
+                    image
+--------------------------------------------------------------------------------
+.close 	            Indicates a close icon
+--------------------------------------------------------------------------------
+.caret 	            Indicates dropdown functionality (will reverse automatically
+                    in dropup menus)
+--------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>

@@ -1,0 +1,148 @@
+<!-----------------------------------------
+Daniel OUATTARA- daniel.ouattara_AT_gmx.com
+30 06 2020
+Boostrap 3 Tutorial : Objects
+https://www.w3schools.com/bootsrap/
+------------------------------------------->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <title>Boostrap Images</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Boostrap Images.</h1><hr/>
+
+
+<!-- Bootstrap Image Shapes
+===========================                                                                     -->
+
+     <div class="container">
+         <h2>Rounded Image Corners</h2>
+         <p>The <code>.img-rounded</code> adds rounded corners to an image 
+            (not available in IE8):</p>
+         <img src="./../../images/img_lights.jpg" alt=" Aurore boreal" class="img-rounded"/>
+     </div><br/><br/>
+
+     <div class="container">
+        <h2>Circle Image Corners</h2>
+        <p>The <code>.img-circle</code> class shapes the image to a circle 
+            (not available in IE8):</p>
+        <img src="./../../images/img_lights.jpg" alt=" Aurore boreal" class="img-circle"/>
+    </div><br/><br/>
+
+    <div class="container">
+        <h2>Thumbnail Image Corners</h2>
+        <p>The <code>.img-thumbnail</code> adds shapes image to a thumbnail 
+            (not available in IE8):</p>
+        <img src="./../../images/img_lights.jpg" alt=" Aurore boreal" class="img-thumbnail"/>
+    </div><br/><br/>
+
+
+<!-- Responsive Images
+======================
+
+Images come in all sizes. So do screens. Responsive images automatically adjust 
+to fit the size of the screen.
+
+Create responsive images by adding an '.img-responsive' class to the <img> tag. 
+The image will then scale nicely to the parent element.
+The '.img-responsive' class applies 'display: block;',  'max-width: 100%;' and 
+'height: auto;' to the image:                                                 -->
+     
+
+    <div class="container">
+        <h2>Responsive Image Corners</h2>
+        <p>The <code>.img-responsive</code>  makes the image scale nicely to 
+            the parent element (resize the browser window to see the effect)</p>
+        <img src="./../../images/img_lights.jpg" alt=" Aurore boreal" class="img-responsive"/>
+    </div><br/><br/>
+
+
+<!-- Image Gallery
+===================
+You can also use Bootstrap's grid system in conjunction with the '.thumbnail' class 
+to create an image gallery. -->
+
+      <div class="container">
+          <div class="row">
+
+              <div class="col-md-4">
+                  <div class="thumbnail">
+                      <a href="./../../images/Koala.jpg" target="_blank">
+                          <img src="./../../images/Koala.jpg" alt="Koala" >
+                          <div class="caption">
+                             <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                          </div>
+                      </a>
+                  </div>
+              </div> 
+
+              <div class="col-md-4">
+                <div class="thumbnail">
+                    <a href="./../../images/Koala.jpg" target="_blank">
+                        <img src="./../../images/girafe2.jpg" alt="Koala" >
+                        <div class="caption">
+                           <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                        </div>
+                    </a>
+                 </div>
+              </div> 
+            
+              <div class="col-md-4">
+                  <div class="thumbnail">
+                      <a href="./../../images/Koala.jpg" target="_blank">
+                         <img src="./../../images/acacia-trees.jpg" alt="Koala" >
+                          <div class="caption">
+                           <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                         </div>
+                     </a>
+                </div>
+            </div> 
+          </div>
+       </div>
+
+
+<!--Responsive Embeds
+======================
+
+Also let videos or slideshows scale properly on any device.
+
+Classes can be applied directly to <iframe>, <embed>, <video>, 
+and <object> elements.
+
+The following example creates a responsive video by adding an 
+'.embed-responsive-item' class to an <iframe> tag 
+(the video will then scale nicely to the parent element). 
+The containing <div> defines the aspect ratio of the video:
+-->
+
+
+      <div class="container">
+          <h2>Responsive Embed</h2>
+          <p>Create a responsive video and scale it nicely to the parent 
+              element.</p>
+          
+          <h2>Aspect Ratio 4:3</h2>
+          <div class="embed-responsive embed-responsive-4by3">
+              <iframe class="embed-responsive-item" 
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+          </div>
+          
+          <h2>Aspect Ratio 16:9</h2>
+          <div class="embed-responsive embed-responsive-16by9">
+              <iframe class="embed-responsive-item"  
+              src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+          </div>
+      </div>
+
+
+
+    </body>
+
+ </html>
